@@ -34,16 +34,16 @@ function averageClavin(signals, wands, wandThreshold, loops){
 				if((signals - j)<=wandsToUse){ // 
 					time = 0;
 					wandsToUse --;
-				}else if((time > wandThreshold)&&(wandsToUse > 0)){
+				}else if((time >= wandThreshold)&&(wandsToUse > 0)){
 					time = 0;
 					wandsToUse --;	
 				}
 			}
 			journeyTime += time;
 			
-		};
+		}
 		total += journeyTime;
-	};
+	}
 
 	return total/loops;
 }
