@@ -31,7 +31,7 @@ function averageClavin(signals, wands, wandThreshold, loops){
 			var time = timeToWaitAtSignal();
 
 			if(time != 0){ // add 0 if its a green light
-				if((signals - j)<=wandsToUse){
+				if((signals - j)<=wandsToUse){ // 
 					time = 0;
 					wandsToUse --;
 				}else if((time > wandThreshold)&&(wandsToUse > 0)){
