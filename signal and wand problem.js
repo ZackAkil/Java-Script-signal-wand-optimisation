@@ -5,7 +5,6 @@ function timeToWaitAtSignal(){
 	}else{
 		return Math.floor((Math.random() * 80) + 1); // if its red
 	}
-
 }
 
 function averageTimeWaiting(loops){
@@ -16,7 +15,6 @@ function averageTimeWaiting(loops){
 		total += timeToWaitAtSignal();
 	};
 	return total/loops;
-
 }
 
 function averageClavin(signals, wands, wandThreshold, loops){
@@ -31,11 +29,18 @@ function averageClavin(signals, wands, wandThreshold, loops){
 		for (var j = 0; j < signals; j++) {
 
 			var time = timeToWaitAtSignal();
-			if((time > wandThreshold)&&(wandsToUse > 0)){
-				time = 0;
-				wandsToUse --;
+
+			if(time != 0){ // add 0 if its a green light
+				if((signals - j)<=wandsToUse){
+					time = 0;
+					wandsToUse --;
+				}else if((time > wandThreshold)&&(wandsToUse > 0)){
+					time = 0;
+					wandsToUse --;	
+				}
 			}
 			journeyTime += time;
+			
 		};
 		total += journeyTime;
 	};
