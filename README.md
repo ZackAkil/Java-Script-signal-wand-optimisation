@@ -35,6 +35,7 @@ The estimated time Calvin takes with 2 signals using 1 wand is ≈ **8.9 seconds
 The estimated time Calvin takes with 2 signals using 1 wand is ≈ **9.3 seconds** with a wand use threshold of  ≈ **13 seconds**.
 
 
+
 ![Optimisation chart][chart]
 
 [chart]: https://github.com/ZackAkil/Java-Script-signal-wand-optimisation/blob/master/optimisation.chart.png "Optimisation chart"
