@@ -20,7 +20,7 @@ var loops = 1000000; // number of interations that will be used for calculating 
 optimalWandUse(signals, wands, loops);
 ```
 
-## Resultant performance
+## Results
 The chart below shows the performance for different values of when to use the wand when the signal is red.
 
 The blue line is the performance when Calvin ignores when he has spare wand uses and will only ever use a wand if the time to wait is greater than the threshold value.
