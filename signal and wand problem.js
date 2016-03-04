@@ -17,7 +17,7 @@ function averageTimeWaiting(loops){
 	return total/loops;
 }
 
-function averageClavin(signals, wands, wandThreshold, loops){
+function averageCalvin(signals, wands, wandThreshold, loops){
 
 	var total = 0;
 
@@ -56,7 +56,7 @@ function optimalWandUse(signals, wands, loops){
 
 	for(var i = 0; i < 80; i++){
 
-		var avg = averageClavin(signals,wands,i,loops);
+		var avg = averageCalvin(signals,wands,i,loops);
 		if(avg < minAvergeTime){
 			minAvergeTime = avg;
 			minWandTreshold = i;
