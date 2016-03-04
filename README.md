@@ -32,7 +32,7 @@ The green line is the performance when Calvin uses the wand if he has enough to 
 The estimated time Calvin takes with 2 signals using 1 wand is ≈ **8.9 seconds** with a wand use threshold of  ≈ **20 seconds**.
 
 #### When using spare wands is disabled:
-The estimated time Calvin takes with 2 signals using 1 wand is ≈ **9.3 seconds** with a wand use threshold of  ≈ **13 seconds**.
+The estimated time Calvin takes with 2 signals using 1 wand is ≈ **9.4 seconds** with a wand use threshold of  ≈ **13 seconds**.
 
 
 
