@@ -50,7 +50,7 @@ function optimalWandUse(signals, wands, loops){
 			minAvergeTime = avg;
 			minWandTreshold = i;
 		}
-		results += avg.toString() + "\n";
+		results += i.toString() + "," + avg.toString() + "\n";
 	}
 
 	return results + "optimal wand threshold : "
