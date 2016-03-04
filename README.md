@@ -12,9 +12,10 @@ By running the optimalWandUse function will output the average travel times for 
 
 ### Example code
 ```javascript
-var signals = 2;
-var wands = 1;
-var loops = 100000;
+var signals = 2; // number of signals Calvin needs to cross
+var wands = 1; // number of times Calvin can use the wand
+var loops = 100000; // number of interations that will be used for calculating the average
+
 optimalWandUse(signals, wands, loops);
 ```
 
