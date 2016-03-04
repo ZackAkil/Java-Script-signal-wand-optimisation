@@ -7,28 +7,21 @@ function timeToWaitAtSignal(){
 	}
 }
 
-function averageTimeWaiting(loops){
-
-	var total = 0;
-
-	for (var i = 0; i < loops; i++) {
-		total += timeToWaitAtSignal();
-	};
-	return total/loops;
-}
-
 function averageCalvin(signals, wands, wandThreshold, loops){
 
 	var total = 0;
+	var journeyTime;
+	var wandsToUse;
+	var time;
 
 	for (var i = 0; i < loops; i++) {
 		
-		var journeyTime = 0;
-
-		var wandsToUse = wands;
+		journeyTime = 0;
+		wandsToUse = wands;
+		
 		for (var j = 0; j < signals; j++) {
 
-			var time = timeToWaitAtSignal();
+			time = timeToWaitAtSignal();
 
 			if(time != 0){ // add 0 if its a green light
 				if((signals - j)<=wandsToUse){ // 
@@ -40,11 +33,9 @@ function averageCalvin(signals, wands, wandThreshold, loops){
 				}
 			}
 			journeyTime += time;
-			
 		}
 		total += journeyTime;
 	}
-
 	return total/loops;
 }
 
