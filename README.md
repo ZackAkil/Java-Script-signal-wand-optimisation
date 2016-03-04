@@ -15,6 +15,8 @@ The blue line is the performance when Calvin ignore when he has spare wand uses 
 The green line is the performance when Calvin uses wand if he has enough to use on all of the remaining signals.
 
 The estimated time Calvin takes when crossing 2 signals using 1 wand is ≈ **8.9 seconds** with a wand use threshold of  ≈ **20**.
+
+
 ![Optimisation chart][chart]
 
 [chart]: https://github.com/ZackAkil/Java-Script-signal-wand-optimisation/blob/master/optimisation.chart.png "Optimisation chart"
