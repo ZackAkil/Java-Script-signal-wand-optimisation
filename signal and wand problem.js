@@ -68,5 +68,4 @@ function optimalWandUse(signals, wands, loops){
 	 + minWandTreshold.toString()
 	  + " with average time of "
 	   + minAvergeTime.toString();
-
 }
