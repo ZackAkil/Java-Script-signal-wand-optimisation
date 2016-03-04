@@ -7,7 +7,7 @@ function timeToWaitAtSignal(){
 	}
 }
 
-function performJourney(signals, wands, wandThreshold){
+function performJourney(signals, wands, wandThreshold,useSpareWands){
 
 	var time =0;
 	var journeyTime = 0;
@@ -18,7 +18,7 @@ function performJourney(signals, wands, wandThreshold){
 		time = timeToWaitAtSignal();
 
 		if(time != 0){ // add 0 if its a green light
-			if((signals - j)<=wandsToUse){ // 
+			if( ((signals - j)<=wandsToUse)&(useSpareWands)){ // use spare wands if enabled
 				time = 0;
 				wandsToUse --;
 			}else if((time >= wandThreshold)&&(wandsToUse > 0)){
@@ -31,17 +31,17 @@ function performJourney(signals, wands, wandThreshold){
 	return journeyTime;
 }
 
-function averageJourneyTime(signals, wands, wandThreshold, loops){
+function averageJourneyTime(signals, wands, wandThreshold, loops,useSpareWands){
 
 	var total = 0;
 
 	for (var i = 0; i < loops; i++) {
-		total += performJourney(signals,wands,wandThreshold);
+		total += performJourney(signals,wands,wandThreshold,useSpareWands);
 	}
 	return total/loops;
 }
 
-function optimalWandUse(signals, wands, loops){
+function optimalWandUse(signals, wands, loops, useSpareWands){
 
 	var results = "";
 	var minWandTreshold;
@@ -49,7 +49,7 @@ function optimalWandUse(signals, wands, loops){
 
 	for(var i = 0; i < 80; i++){
 
-		var avg = averageJourneyTime(signals,wands,i,loops);
+		var avg = averageJourneyTime(signals,wands,i,loops,useSpareWands);
 		if(avg < minAvergeTime){
 			minAvergeTime = avg;
 			minWandTreshold = i;
