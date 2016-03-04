@@ -16,8 +16,9 @@ After loading all of the [JS functions](https://github.com/ZackAkil/Java-Script-
 var signals = 2; // number of signals Calvin needs to cross
 var wands = 1; // number of times Calvin can use the wand
 var loops = 1000000; // number of interations that will be used for calculating the average
+var useSpareWands = true; // flag for using spare wands for red lights 
 
-optimalWandUse(signals, wands, loops);
+optimalWandUse(signals, wands, loops, useSpareWands);
 ```
 
 ## Results
