@@ -10,15 +10,13 @@ function timeToWaitAtSignal(){
 function averageCalvin(signals, wands, wandThreshold, loops){
 
 	var total = 0;
-	var journeyTime;
-	var wandsToUse;
-	var time;
+	var journeyTime,wandsToUse,time;
 
 	for (var i = 0; i < loops; i++) {
 		
 		journeyTime = 0;
 		wandsToUse = wands;
-		
+
 		for (var j = 0; j < signals; j++) {
 
 			time = timeToWaitAtSignal();
