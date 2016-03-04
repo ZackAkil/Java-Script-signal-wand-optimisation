@@ -15,7 +15,7 @@ After loading all of the JS functions into a JS runtime console running the opti
 ```javascript
 var signals = 2; // number of signals Calvin needs to cross
 var wands = 1; // number of times Calvin can use the wand
-var loops = 100000; // number of interations that will be used for calculating the average
+var loops = 1000000; // number of interations that will be used for calculating the average
 
 optimalWandUse(signals, wands, loops);
 ```
