@@ -7,7 +7,7 @@ Calvin has to cross several signals when he walks from his home to school. Each 
 If the total number of signals is 2 and Calvin can use his magic wand only once, then what is the expected waiting time at the signals when Calvin optimally walks from his home to school?
 
 
-## Resultant performace chart
+## Resultant performance
 The chart below shows the performance for different values of when to use the wand when the signal is red.
 
 The blue line is the performance when Calvin ignors when he has spare wand uses and will only ever use a wand if the time to wait is greater than the threshold value.
