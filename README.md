@@ -7,6 +7,16 @@ Calvin has to cross several signals when he walks from his home to school. Each 
 ## The question
 If the total number of signals is 2 and Calvin can use his magic wand only once, then what is the expected waiting time at the signals when Calvin optimally walks from his home to school?
 
+## Code usage
+By running the optimalWandUse function will output the average travel times for all values of the "wand use threshold" from 1 to 80 and show the minimum values.
+
+### Example code
+```javascript
+var signals = 2;
+var wands = 1;
+var loops = 100000;
+optimalWandUse(signals, wands, loops);
+```
 
 ## Resultant performance
 The chart below shows the performance for different values of when to use the wand when the signal is red.
