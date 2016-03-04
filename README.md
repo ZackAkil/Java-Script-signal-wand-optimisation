@@ -10,7 +10,7 @@ If the total number of signals is 2 and Calvin can use his magic wand only once,
 ## Code usage
 Running the optimalWandUse function will output the average travel times for all values of the "wand use threshold" from 1 to 80 and show the minimum values.
 
-### Example code
+#### Example code
 ```javascript
 var signals = 2; // number of signals Calvin needs to cross
 var wands = 1; // number of times Calvin can use the wand
