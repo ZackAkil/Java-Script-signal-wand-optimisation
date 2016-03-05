@@ -1,3 +1,6 @@
+// Signal and Wand optimisation problem solution
+// Author - Zack Akil, 3/3/2016
+
 function timeToWaitAtSignal(){
 
 	if(Math.floor((Math.random() * 2))){
