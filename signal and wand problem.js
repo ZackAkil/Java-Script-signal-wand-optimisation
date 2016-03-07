@@ -1,5 +1,5 @@
 // Signal and Wand optimisation problem solution
-// Author - Zack Akil, 3/3/2016
+// Author - Zack Akil, Created - 3/3/2016
 
 function timeToWaitAtSignal(){
 
